@@ -21,15 +21,6 @@ public class Trabajador {
 		this.trabajos = new ArrayList<Trabajo>();
 	}
 	
-	public Trabajador(String nombre, String email, Oficio oficio, Double costoPorHora, Double comision) {
-		this.nombre = nombre;
-		this.email = email;
-		this.oficio = oficio;
-		this.costoPorHora = costoPorHora;
-		this.comision = comision;
-		this.trabajos = new ArrayList<Trabajo>();
-	}
-	
 	public void AgregarTarea(Trabajo t) throws OficioNoCoincideException,AgendaOcupadaException{
 		
 		if(!t.getOficioRequerido().equals(this.oficio)) {

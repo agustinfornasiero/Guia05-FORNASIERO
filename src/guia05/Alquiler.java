@@ -3,7 +3,7 @@ package guia05;
 import java.time.*;
 import java.time.temporal.ChronoUnit;
 
-public class Alquiler {
+public class Alquiler implements Contratable {
 	//Atributes
 	private String nombre;
 	private LocalDate fechaInicio;
@@ -13,10 +13,10 @@ public class Alquiler {
 	
 	//Methods and Constructors
 	public Alquiler(String nombre, LocalDate fechaInicio,LocalDate fechaFin ,Double costoPorDia) {
-		this.nombre=nombre;
-		this.fechaInicio=fechaInicio;
-		this.fechaFin=fechaFin;
-		this.costoPorDia=costoPorDia;
+		this.nombre = nombre;
+		this.fechaInicio = fechaInicio;
+		this.fechaFin = fechaFin;
+		this.costoPorDia = costoPorDia;
 	}
 	
 
